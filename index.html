@@ -1,0 +1,32 @@
+<html>
+     <head>
+	<title> Motivational Msg App </title>
+	<style>
+	    *{font-size:40px;font-family:Cambria;}
+	    body{background-color:linen;}
+	</style>
+     </head>
+     <body>
+	<center>
+	    <h1> Motivational Msg App by Khushi </title>
+	    <h2 id="msg"/>
+	
+	    <script>
+		function check()
+		{
+		   
+		    let msg = document.getElementById("msg");
+
+		    let messages = ["Believe in yourself","Never give up","Embrace the journey","Dreams come true","You got this","Stay positive always","Keep moving forward"];
+
+		    let index = parseInt(Math.random() * messages.length);
+		    msg.innerHTML = messages[index];
+		}
+		check();
+		setInterval(check,5000);	// updates after 5 sec
+
+	    </script>
+	</center>
+     </body>
+</html>
+
